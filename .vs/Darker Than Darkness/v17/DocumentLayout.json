@@ -1,0 +1,78 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Mine\\Project\\Game\\Darker Than Darkness\\Darker Than Darkness\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{880909AF-4EF2-4DC7-7241-E87E5F90A8B9}|Assembly-CSharp.csproj|e:\\mine\\project\\game\\darker than darkness\\darker than darkness\\assets\\playermovements.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{880909AF-4EF2-4DC7-7241-E87E5F90A8B9}|Assembly-CSharp.csproj|solutionrelative:assets\\playermovements.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{880909AF-4EF2-4DC7-7241-E87E5F90A8B9}|Assembly-CSharp.csproj|E:\\Mine\\Project\\Game\\Darker Than Darkness\\Darker Than Darkness\\assets\\platformscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{880909AF-4EF2-4DC7-7241-E87E5F90A8B9}|Assembly-CSharp.csproj|solutionrelative:assets\\platformscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{880909AF-4EF2-4DC7-7241-E87E5F90A8B9}|Assembly-CSharp.csproj|E:\\Mine\\Project\\Game\\Darker Than Darkness\\Darker Than Darkness\\assets\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{880909AF-4EF2-4DC7-7241-E87E5F90A8B9}|Assembly-CSharp.csproj|solutionrelative:assets\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PlatformScript.cs",
+              "DocumentMoniker": "E:\\Mine\\Project\\Game\\Darker Than Darkness\\Darker Than Darkness\\Assets\\PlatformScript.cs",
+              "RelativeDocumentMoniker": "Assets\\PlatformScript.cs",
+              "ToolTip": "E:\\Mine\\Project\\Game\\Darker Than Darkness\\Darker Than Darkness\\Assets\\PlatformScript.cs",
+              "RelativeToolTip": "Assets\\PlatformScript.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAuwA0AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T21:26:31.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Player.cs",
+              "DocumentMoniker": "E:\\Mine\\Project\\Game\\Darker Than Darkness\\Darker Than Darkness\\Assets\\Player.cs",
+              "RelativeDocumentMoniker": "Assets\\Player.cs",
+              "ToolTip": "E:\\Mine\\Project\\Game\\Darker Than Darkness\\Darker Than Darkness\\Assets\\Player.cs",
+              "RelativeToolTip": "Assets\\Player.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAuwBgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T20:33:47.326Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PlayerMovements.cs",
+              "DocumentMoniker": "E:\\Mine\\Project\\Game\\Darker Than Darkness\\Darker Than Darkness\\Assets\\PlayerMovements.cs",
+              "RelativeDocumentMoniker": "Assets\\PlayerMovements.cs",
+              "ToolTip": "E:\\Mine\\Project\\Game\\Darker Than Darkness\\Darker Than Darkness\\Assets\\PlayerMovements.cs",
+              "RelativeToolTip": "Assets\\PlayerMovements.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAAwDUAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T14:10:00.559Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
