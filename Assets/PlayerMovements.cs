@@ -48,6 +48,7 @@ public class PlayerMovements : MonoBehaviour
             var targetPosition =
                 new Vector2(transform.position.x + moveInfo.x, transform.position.y);
             transform.position = Vector2.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
+            
             if (canGoUp && moveInfo.y != 0)
             {
                 rigidbody2d.gravityScale = 0;
