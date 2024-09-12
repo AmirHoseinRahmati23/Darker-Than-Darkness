@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "E:\\Mine\\Project\\Game\\Darker Than Darkness\\Darker Than Darkness\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{880909AF-4EF2-4DC7-7241-E87E5F90A8B9}|Assembly-CSharp.csproj|e:\\mine\\project\\game\\darker than darkness\\darker than darkness\\assets\\playermovements.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{880909AF-4EF2-4DC7-7241-E87E5F90A8B9}|Assembly-CSharp.csproj|E:\\Mine\\Project\\Game\\Darker Than Darkness\\Darker Than Darkness\\assets\\playermovements.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{880909AF-4EF2-4DC7-7241-E87E5F90A8B9}|Assembly-CSharp.csproj|solutionrelative:assets\\playermovements.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{880909AF-4EF2-4DC7-7241-E87E5F90A8B9}|Assembly-CSharp.csproj|e:\\mine\\project\\game\\darker than darkness\\darker than darkness\\assets\\platformscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{880909AF-4EF2-4DC7-7241-E87E5F90A8B9}|Assembly-CSharp.csproj|E:\\Mine\\Project\\Game\\Darker Than Darkness\\Darker Than Darkness\\assets\\platformscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{880909AF-4EF2-4DC7-7241-E87E5F90A8B9}|Assembly-CSharp.csproj|solutionrelative:assets\\platformscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -40,7 +40,7 @@
               "RelativeDocumentMoniker": "Assets\\PlayerMovements.cs",
               "ToolTip": "E:\\Mine\\Project\\Game\\Darker Than Darkness\\Darker Than Darkness\\Assets\\PlayerMovements.cs",
               "RelativeToolTip": "Assets\\PlayerMovements.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAAAA0AAAAzAAAA",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-11T17:04:52.542Z",
               "EditorCaption": ""
@@ -55,8 +55,7 @@
               "RelativeToolTip": "Assets\\PlatformScript.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAuwA0AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-10T21:26:31.865Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-10T21:26:31.865Z"
             },
             {
               "$type": "Document",
