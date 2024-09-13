@@ -11,9 +11,9 @@ public class PlayerMovements : MonoBehaviour
     private Transform cameraTransform;
     [Header("Movement Info")]
     [SerializeField] private Vector2 moveInfo;
-    [SerializeField] private float moveSpeed = 2.5f;
+    [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private float climbSpeed = 2f;
-    [SerializeField] private int jumpForce;
+    [SerializeField] private float jumpForce;
     private bool canGoUp = false;
     int countJump = 2;
     void Start()
@@ -31,10 +31,22 @@ public class PlayerMovements : MonoBehaviour
   
     private void OnCollisionEnter2D(Collision2D collision)
     {
+
         if (collision.gameObject.tag == "Ground") //Jump Reset
         {
-            countJump = 2;
+            bool isFromBelow = default;
+            foreach (ContactPoint2D contactPoint in collision.contacts)
+            {
+                isFromBelow = contactPoint.normal.y == 1;
+            }
+            if (isFromBelow)
+                ResetJumps();
         }
+    }
+
+    void ResetJumps()
+    {
+        countJump = 2;
     }
     public void SetCanGoUp(bool canGoUp)
     {
