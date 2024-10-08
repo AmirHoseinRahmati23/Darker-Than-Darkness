@@ -6,6 +6,13 @@ TagManager:
   tags:
   - Ground
   - Object
+  - Sword
+  - Logic
+  - Sun
+  - Moon
+  - Shade
+  - Timer
+  - SpawnPortal
   layers:
   - Default
   - TransparentFX
@@ -15,9 +22,9 @@ TagManager:
   - UI
   - Player
   - Wood
-  - 
-  - 
-  - 
+  - Enemy
+  - Trap
+  - Win
   - 
   - 
   - 

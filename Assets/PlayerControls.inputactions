@@ -92,6 +92,34 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "Combat",
+            "id": "e153bf99-6e01-47c6-bfd5-8f4a3dfca54c",
+            "actions": [
+                {
+                    "name": "Swing",
+                    "type": "Button",
+                    "id": "f38639ee-a71d-46bc-aec3-ca86b21164e5",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "d30bf82f-1765-48f9-b979-61a22edbb06a",
+                    "path": "<Keyboard>/j",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Swing",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": []

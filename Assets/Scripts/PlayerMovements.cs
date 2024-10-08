@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class PlayerMovements : MonoBehaviour
@@ -9,6 +11,9 @@ public class PlayerMovements : MonoBehaviour
     private Rigidbody2D rigidbody2d;
     private Animator animator;
     private Transform cameraTransform;
+
+    [SerializeField]
+    public LogicManager Logic;
     [Header("Movement Info")]
     [SerializeField] private Vector2 moveInfo;
     [SerializeField] private float moveSpeed = 5f;
@@ -16,6 +21,9 @@ public class PlayerMovements : MonoBehaviour
     [SerializeField] private float jumpForce;
     private bool canGoUp = false;
     int countJump = 2;
+    [Header("Combat")]
+    [SerializeField] private GameObject sword;
+    private bool isSwinging = false;
     void Start()
     {
         InitiateFields();
@@ -24,11 +32,16 @@ public class PlayerMovements : MonoBehaviour
 
     void Update()
     {
-        ApplyMovement();
-        HandleAnimation();
-        PlayerFlip();
+        if (Logic.gameIsActive)
+        {
+            ApplyMovement();
+            HandleAnimation();
+            PlayerFlip();
+            RotateSword();
+        }
     }
-  
+
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
 
@@ -37,10 +50,18 @@ public class PlayerMovements : MonoBehaviour
             bool isFromBelow = default;
             foreach (ContactPoint2D contactPoint in collision.contacts)
             {
-                isFromBelow = contactPoint.normal.y == 1;
+                isFromBelow = contactPoint.normal.y > 0;
             }
             if (isFromBelow)
                 ResetJumps();
+        }
+        if(collision.gameObject.layer == 9 || collision.gameObject.layer == 8)
+        {
+            GameOver();
+        }
+        if(collision.gameObject.layer == 10)
+        {
+            Logic.Winning();
         }
     }
 
@@ -58,8 +79,33 @@ public class PlayerMovements : MonoBehaviour
         controls.Movement.Walking.canceled += ctx => moveInfo = Vector2.zero;
 
         controls.Movement.Jumping.performed += ctx => Jump();
+
+        controls.Combat.Swing.performed += ctx => SwingSword();
+        
     }
 
+    private void SwingSword()
+    {
+        sword.SetActive(true);
+        isSwinging = true;
+    }
+    private void RotateSword()
+    {
+        if (isSwinging)
+        {
+            var zAngle = sword.transform.rotation.eulerAngles.z;
+            if (zAngle > 260 || zAngle <= 0)
+            {
+                sword.transform.Rotate(new Vector3(0, 0, -1000) * Time.deltaTime);
+            }
+            else
+            {
+                sword.transform.Rotate(0, 0, 100);
+                sword.SetActive(false);
+                isSwinging = false;
+            }
+        }
+    }
     private void InitiateFields()
     {
         player = GetComponent<Player>();
@@ -67,6 +113,7 @@ public class PlayerMovements : MonoBehaviour
         animator = GetComponent<Animator>();
         controls = player.controls;
         cameraTransform = GameObject.FindGameObjectWithTag("MainCamera").transform;
+        Logic = GameObject.FindGameObjectWithTag(nameof(Logic)).GetComponent<LogicManager>();
     }
     
     private void ApplyMovement()
@@ -101,7 +148,7 @@ public class PlayerMovements : MonoBehaviour
 
     private void Jump()
     {
-        if (countJump <= 2 && countJump != 0)
+        if (countJump <= 2 && countJump != 0 && Logic.gameIsActive)
         {
             rigidbody2d.velocity = jumpForce * Vector2.up;
             countJump--;
@@ -122,5 +169,11 @@ public class PlayerMovements : MonoBehaviour
     private void HandleAnimation()
     {
         animator.SetBool("IsRunning", moveInfo.x != 0); // Set to walking animation
+    }
+
+    public void GameOver()
+    {
+        Logic.GameOver();
+        Destroy(gameObject);
     }
 }
